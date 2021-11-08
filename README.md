@@ -1,4 +1,4 @@
-# grajau-history
+# Grajaú-E-SPORTS
 
 ## Project setup
 ```
