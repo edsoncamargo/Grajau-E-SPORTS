@@ -2,18 +2,21 @@
   <main>
     <Navbar></Navbar>
     <Home></Home>
+    <Trophies></Trophies>
   </main>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home.vue";
+import Trophies from "./components/Trophies.vue";
 
 export default {
   name: "App",
   components: {
     Navbar,
     Home,
+    Trophies
   },
 };
 </script>
