@@ -56,9 +56,11 @@ export default {
 .shields-container {
   background-color: #ffe294;
   padding: 40px 115px;
+  padding-bottom: 64px;
 
   @media only screen and (max-width: 768px) {
     padding: 48px 24px;
+    padding-bottom: 72px;
   }
 
   &-text {
@@ -75,7 +77,7 @@ export default {
 
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url(../assets/home/logo.png);
+      background-image: url(../assets/images/home/logo.png);
       background-size: contain;
     }
 

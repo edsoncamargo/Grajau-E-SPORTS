@@ -4,6 +4,8 @@
     <Home></Home>
     <Trophies></Trophies>
     <Shields></Shields>
+    <Players></Players>
+    <Footer></Footer>
   </main>
 </template>
 
@@ -12,6 +14,8 @@ import Navbar from "./components/Navbar.vue";
 import Home from "./components/Home.vue";
 import Trophies from "./components/Trophies.vue";
 import Shields from "./components/Shields.vue";
+import Players from "./components/Players.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -20,6 +24,8 @@ export default {
     Home,
     Trophies,
     Shields,
+    Players,
+    Footer
   },
 };
 </script>

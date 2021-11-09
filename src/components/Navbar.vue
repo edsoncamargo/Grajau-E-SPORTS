@@ -45,7 +45,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 
   position: relative;
 
@@ -55,6 +55,8 @@ export default {
 
   box-sizing: border-box;
 
+  color: #041034;
+
   &:after {
     content: "";
 
@@ -62,6 +64,7 @@ export default {
     width: 100%;
 
     position: absolute;
+    left: 0px;
     bottom: 0px;
 
     background: linear-gradient(180deg, rgba(97, 38, 158, 1) 0%, rgba(4, 16, 52, 1) 100%);
