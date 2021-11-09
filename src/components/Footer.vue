@@ -118,7 +118,6 @@ export default {
         font-size: 30px;
         font-weight: bold;
         line-height: 35px;
-        white-space: nowrap;
 
         strong {
           font-weight: 900;

@@ -240,6 +240,10 @@ export default {
         @media only screen and (max-width: 768px) {
           margin-left: 0px;
         }
+
+        @media only screen and (max-width: 500px) {
+          width: 150px;
+        }
       }
 
       #logo_2 {
@@ -247,6 +251,10 @@ export default {
         height: 216px;
 
         background-image: url(../assets/images/shields/RB_Grajaú_2.png);
+
+        @media only screen and (max-width: 500px) {
+          width: 150px;
+        }
       }
 
       #logo_3 {
