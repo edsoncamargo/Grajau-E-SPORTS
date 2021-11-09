@@ -75,7 +75,7 @@ export default {
 
         background-position: center;
         background-size: contain;
-        background-image: url(../assets/home/logo.png);
+        background-image: url(../assets/images/home/logo.png);
         background-repeat: no-repeat;
 
         @media only screen and (max-width: 768px) {

@@ -87,7 +87,7 @@ export default {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url(../assets/home/logo.png);
+        background-image: url(../assets/images/home/logo.png);
 
         margin-right: 6px;
         margin-bottom: 8px;
@@ -150,11 +150,11 @@ export default {
         background-position: center;
 
         &.instagram {
-          background-image: url(../assets/icons/instagram-brands.svg);
+          background-image: url(../assets/images/icons/instagram-brands.svg);
         }
 
         &.youtube {
-          background-image: url(../assets/icons/youtube-square-brands.svg);
+          background-image: url(../assets/images/icons/youtube-square-brands.svg);
         }
       }
     }

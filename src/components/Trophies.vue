@@ -73,6 +73,10 @@ export default {
   background-color: #61269e;
   padding: 40px 115px;
 
+  @media only screen and (max-width: 768px) {
+    padding: 48px 24px;
+  }
+
   &-text {
     display: flex;
     align-items: center;
@@ -87,7 +91,7 @@ export default {
 
       background-position: center;
       background-size: contain;
-      background-image: url(../assets/home/logo.png);
+      background-image: url(../assets/images/home/logo.png);
       background-repeat: no-repeat;
     }
 
@@ -168,11 +172,11 @@ export default {
             background-position: center;
 
             &.trophy_1 {
-              background-image: url(../assets/trophies/trophy_1.svg);
+              background-image: url(../assets/images/trophies/trophy_1.svg);
             }
 
             &.trophy_2 {
-              background-image: url(../assets/trophies/trophy_2.svg);
+              background-image: url(../assets/images/trophies/trophy_2.svg);
             }
           }
         }
