@@ -76,6 +76,11 @@ export default {
 
     margin-right: 24px;
 
+    @media only screen and (max-width: 359px) {
+      margin-right: -5px;
+      margin-left: -14px;
+    }
+
     li {
       display: flex;
       align-items: center;
@@ -120,6 +125,10 @@ export default {
 
     li {
       margin-right: 20px;
+
+      @media only screen and (max-width: 359px) {
+        margin-right: 8px;
+      }
 
       p {
         font-size: 22px;
