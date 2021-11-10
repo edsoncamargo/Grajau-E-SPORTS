@@ -6,10 +6,19 @@
     </div>
 
     <div class="players-container-squad">
-      <h2>WORK IN PROGRESS...</h2>
-      <h2>WORK IN PROGRESS...</h2>
-      <h2>WORK IN PROGRESS...</h2>
-      <h2>WORK IN PROGRESS...</h2>
+      <div
+        v-on:click="orderPlayerByNumber()"
+        class="players-container-squad-card"
+        v-for="player in state.players"
+        :key="player.name"
+      >
+        <em> {{ player.number }} </em>
+
+        <div class="players-container-squad-card-content-center">
+          <p class="name">{{ player.name }}</p>
+          <p class="position">{{ player.position }}</p>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -22,15 +31,176 @@ export default {
     const state = reactive({
       players: [
         {
+          name: "zM4NOLAS",
+          number: 10,
+          position: "ATA",
+        },
+        {
+          name: "yBlackburn_",
+          number: 11,
+          position: "ATA",
+        },
+        {
+          name: "Reymysterious191",
+          number: 9,
+          position: "ATA",
+        },
+        {
           name: "HNT3DINHO",
           number: 7,
           position: "MEI",
         },
+        {
+          name: "Velloszo",
+          number: 5,
+          position: "VOL",
+        },
+        {
+          name: "zFAROEST",
+          number: 8,
+          position: "VOL",
+        },
+        {
+          name: "Pedrovizzy",
+          number: 18,
+          position: "ALA",
+        },
+        {
+          name: "m4nch4z4ni1510",
+          number: 15,
+          position: "ALA",
+        },
+        {
+          name: "street_1979",
+          number: 99,
+          position: "ALA",
+        },
+        {
+          name: "Cicatriz2k",
+          number: 2,
+          position: "ALA",
+        },
+        {
+          name: "Miranda_JG",
+          number: 97,
+          position: "ZAG",
+        },
+        {
+          name: "Rubensrocha_",
+          number: 49,
+          position: "ZAG",
+        },
+        {
+          name: "MiguelArao",
+          number: 23,
+          position: "ZAG",
+        },
+        {
+          name: "street--1977",
+          number: 4,
+          position: "ZAG",
+        },
+        {
+          name: "Gui_-_zica",
+          number: 1,
+          position: "GOL",
+        },
       ],
+      auxPlayers: [
+        {
+          name: "zM4NOLAS",
+          number: 10,
+          position: "ATA",
+        },
+        {
+          name: "yBlackburn_",
+          number: 11,
+          position: "ATA",
+        },
+        {
+          name: "Reymysterious191",
+          number: 9,
+          position: "ATA",
+        },
+        {
+          name: "HNT3DINHO",
+          number: 7,
+          position: "MEI",
+        },
+        {
+          name: "Velloszo",
+          number: 5,
+          position: "VOL",
+        },
+        {
+          name: "zFAROEST",
+          number: 8,
+          position: "VOL",
+        },
+        {
+          name: "Pedrovizzy",
+          number: 18,
+          position: "ALA",
+        },
+        {
+          name: "m4nch4z4ni1510",
+          number: 15,
+          position: "ALA",
+        },
+        {
+          name: "street_1979",
+          number: 99,
+          position: "ALA",
+        },
+        {
+          name: "Cicatriz2k",
+          number: 2,
+          position: "ALA",
+        },
+        {
+          name: "Miranda_JG",
+          number: 97,
+          position: "ZAG",
+        },
+        {
+          name: "Rubensrocha_",
+          number: 49,
+          position: "ZAG",
+        },
+        {
+          name: "MiguelArao",
+          number: 23,
+          position: "ZAG",
+        },
+        {
+          name: "street--1977",
+          number: 4,
+          position: "ZAG",
+        },
+        {
+          name: "Gui_-_zica",
+          number: 1,
+          position: "GOL",
+        },
+      ],
+      isOrdened: false,
     });
+
+    function orderPlayerByNumber() {
+      if (state.isOrdened === false) {
+        state.isOrdened = true;
+        state.players = state.players.sort(
+          (a, b) => parseFloat(a.number) - parseFloat(b.number)
+        );
+      } else {
+        state.isOrdened = false;
+        state.players = state.auxPlayers;
+      }
+    }
 
     return {
       state,
+      orderPlayerByNumber,
     };
   },
 };
@@ -108,12 +278,102 @@ export default {
   }
 
   &-squad {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffe294;
-    text-align: center;
+    width: calc(100% + 24px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     margin-top: 50px;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+    &-card {
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 200px;
+      max-height: 200px;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-right: 0px;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+
+      background-color: #ffffff;
+      border-top-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border: 3px solid #ffe294;
+
+      padding: 24px 24px;
+
+      margin-right: 24px;
+      margin-bottom: 24px;
+
+      box-sizing: border-box;
+
+      &::before {
+        content: "";
+
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        background-color: #ffffff;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #ffe294;
+
+        box-sizing: border-box;
+
+        cursor: pointer;
+      }
+
+      em {
+        position: absolute;
+        top: 4px;
+        right: 12px;
+
+        font-family: "Roboto", sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: italic;
+        color: #001030;
+      }
+
+      &-content-center {
+        position: relative;
+        z-index: 1;
+
+        p {
+          font-size: 22px;
+          color: #001030;
+          text-align: center;
+        }
+
+        p.name {
+          font-weight: 900;
+        }
+
+        p.position {
+          font-family: "Roboto", sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 </style>
