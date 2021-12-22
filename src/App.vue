@@ -25,7 +25,7 @@ export default {
     Trophies,
     Shields,
     Players,
-    Footer
+    Footer,
   },
 };
 </script>

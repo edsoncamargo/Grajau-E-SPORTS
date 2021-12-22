@@ -17,7 +17,7 @@
               class="trophy"
               v-bind:class="{
                 trophy_1: trophy.type === 'Brasileirão',
-                trophy_2: trophy.type === 'Recopa',
+                trophy_2: trophy.type === 'Copa' || trophy.type === 'Recopa',
               }"
             ></em>
           </div>
@@ -45,17 +45,22 @@ export default {
       trophies: [
         {
           type: "Brasileirão",
+          name: "LDD B",
+          qtd: "2",
+        },
+        {
+          type: "Copa",
+          name: "Titãs CUP",
+          qtd: "1",
+        },
+        {
+          type: "Brasileirão",
           name: "CPC A",
           qtd: "1",
         },
         {
           type: "Recopa",
           name: "CPC A",
-          qtd: "1",
-        },
-        {
-          type: "Brasileirão",
-          name: "LDD B",
           qtd: "1",
         },
       ],

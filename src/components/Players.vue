@@ -7,7 +7,6 @@
 
     <div class="players-container-squad">
       <div
-        v-on:click="orderPlayerByNumber()"
         class="players-container-squad-card"
         v-for="player in state.players"
         :key="player.name"
@@ -31,29 +30,24 @@ export default {
     const state = reactive({
       players: [
         {
-          name: "zM4NOLAS",
-          number: 10,
-          position: "ATA",
-        },
-        {
           name: "yBlackburn_",
           number: 11,
           position: "ATA",
         },
         {
-          name: "Reymysterious191",
+          name: "GRJ_M4NOLAS",
+          number: 10,
+          position: "ATA",
+        },
+        {
+          name: "GRJ_REYNATO",
           number: 9,
           position: "ATA",
         },
         {
-          name: "HNT3DINHO",
+          name: "GRJ_DINHO",
           number: 7,
           position: "MEI",
-        },
-        {
-          name: "Velloszo",
-          number: 5,
-          position: "VOL",
         },
         {
           name: "zFAROEST",
@@ -61,9 +55,9 @@ export default {
           position: "VOL",
         },
         {
-          name: "Pedrovizzy",
-          number: 18,
-          position: "ALA",
+          name: "Velloszo",
+          number: 5,
+          position: "VOL",
         },
         {
           name: "m4nch4z4ni1510",
@@ -71,8 +65,8 @@ export default {
           position: "ALA",
         },
         {
-          name: "street_1979",
-          number: 99,
+          name: "ErickExcellence9",
+          number: 12,
           position: "ALA",
         },
         {
@@ -81,12 +75,7 @@ export default {
           position: "ALA",
         },
         {
-          name: "Miranda_JG",
-          number: 97,
-          position: "ZAG",
-        },
-        {
-          name: "Rubensrocha_",
+          name: "GRJ_RUBIM",
           number: 49,
           position: "ZAG",
         },
@@ -96,8 +85,13 @@ export default {
           position: "ZAG",
         },
         {
-          name: "street--1977",
+          name: "GRJ_VIZZY",
           number: 4,
+          position: "ZAG",
+        },
+        {
+          name: "GG_ARAUJO",
+          number: 3,
           position: "ZAG",
         },
         {
@@ -106,101 +100,10 @@ export default {
           position: "GOL",
         },
       ],
-      auxPlayers: [
-        {
-          name: "zM4NOLAS",
-          number: 10,
-          position: "ATA",
-        },
-        {
-          name: "yBlackburn_",
-          number: 11,
-          position: "ATA",
-        },
-        {
-          name: "Reymysterious191",
-          number: 9,
-          position: "ATA",
-        },
-        {
-          name: "HNT3DINHO",
-          number: 7,
-          position: "MEI",
-        },
-        {
-          name: "Velloszo",
-          number: 5,
-          position: "VOL",
-        },
-        {
-          name: "zFAROEST",
-          number: 8,
-          position: "VOL",
-        },
-        {
-          name: "Pedrovizzy",
-          number: 18,
-          position: "ALA",
-        },
-        {
-          name: "m4nch4z4ni1510",
-          number: 15,
-          position: "ALA",
-        },
-        {
-          name: "street_1979",
-          number: 99,
-          position: "ALA",
-        },
-        {
-          name: "Cicatriz2k",
-          number: 2,
-          position: "ALA",
-        },
-        {
-          name: "Miranda_JG",
-          number: 97,
-          position: "ZAG",
-        },
-        {
-          name: "Rubensrocha_",
-          number: 49,
-          position: "ZAG",
-        },
-        {
-          name: "MiguelArao",
-          number: 23,
-          position: "ZAG",
-        },
-        {
-          name: "street--1977",
-          number: 4,
-          position: "ZAG",
-        },
-        {
-          name: "Gui_-_zica",
-          number: 1,
-          position: "GOL",
-        },
-      ],
-      isOrdened: false,
     });
-
-    function orderPlayerByNumber() {
-      if (state.isOrdened === false) {
-        state.isOrdened = true;
-        state.players = state.players.sort(
-          (a, b) => parseFloat(a.number) - parseFloat(b.number)
-        );
-      } else {
-        state.isOrdened = false;
-        state.players = state.auxPlayers;
-      }
-    }
 
     return {
       state,
-      orderPlayerByNumber,
     };
   },
 };
@@ -287,8 +190,8 @@ export default {
     margin-top: 50px;
 
     @media only screen and (max-width: 768px) {
-        width: 100%;
-      }
+      width: 100%;
+    }
 
     &-card {
       min-width: 300px;
