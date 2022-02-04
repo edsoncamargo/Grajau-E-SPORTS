@@ -12,11 +12,11 @@
         </h1>
 
         <p>
-          O <strong>Grajaú E-SPORTS</strong> foi fundado por iniciativa de dois amigos
-          gamers do Grajaú, São Paulo, Edson Camargo Menezes e Mateus Monteiro. Eles
-          convidaram a todos os amigos que jogavam para participar da reunião inaugural do
-          novo clube, que foi constituído para ser destinado a prática de PRO CLUBS no
-          Fifa 20, dia 29/07/20.
+          O <strong>Grajaú E-SPORTS</strong> foi fundado por iniciativa de dois
+          amigos gamers do Grajaú, São Paulo, Edson Camargo Menezes e Mateus
+          Monteiro. Eles convidaram a todos os amigos que jogavam para
+          participar da reunião inaugural do novo clube, que foi constituído
+          para ser destinado a prática de PRO CLUBS no Fifa 20, dia 29/07/20.
         </p>
       </div>
     </div>
@@ -24,7 +24,7 @@
     <div class="home-container-bottom">
       <a
         class="btn-action"
-        href="https://docs.google.com/spreadsheets/d/1BAZjse4JCyUcIQU1j5tfqCPGJP0R3kN2cpxijtBnLQ4/edit#gid=0"
+        href="https://docs.google.com/spreadsheets/d/1BAZjse4JCyUcIQU1j5tfqCPGJP0R3kN2cpxijtBnLQ4/edit#gid=548591984"
         target="_blank"
         >Veja o histórico do time</a
       >

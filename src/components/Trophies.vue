@@ -33,6 +33,18 @@
         </li>
       </ul>
     </div>
+
+    <div class="second-position-informations">
+      <p>VICES-CAMPEONATOS</p>
+
+      <ul>
+        <li>LICP A 1x</li>
+        <li>LICP C 1x</li>
+        <li>LDD A 1x</li>
+        <li>LDD B 1x</li>
+        <li>DIVISION 2 1x</li>
+      </ul>
+    </div>
   </section>
 </template>
 
@@ -46,7 +58,7 @@ export default {
         {
           type: "Brasileirão",
           name: "LDD B",
-          qtd: "2",
+          qtd: "1",
         },
         {
           type: "Copa",
@@ -75,7 +87,11 @@ export default {
 
 <style lang="scss" scoped>
 .trophies-container {
+  display: flex;
+  flex-direction: column;
+
   background-color: #61269e;
+
   padding: 40px 115px;
 
   @media only screen and (max-width: 768px) {
@@ -220,6 +236,22 @@ export default {
           }
         }
       }
+    }
+  }
+
+  .second-position-informations {
+    font-size: 1.5em;
+    font-weight: 800;
+
+    color: #ffe294;
+
+    margin-top: 32px;
+
+    ul {
+      font-style: italic;
+      font-weight: 500;
+
+      margin-top: 16px;
     }
   }
 }

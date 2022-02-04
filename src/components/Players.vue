@@ -35,19 +35,19 @@ export default {
           position: "ATA",
         },
         {
-          name: "GRJ_M4NOLAS",
-          number: 10,
+          name: "GRJ_REYNATO",
+          number: 7,
           position: "ATA",
         },
         {
-          name: "GRJ_REYNATO",
-          number: 9,
-          position: "ATA",
+          name: "Wraf4__",
+          number: 25,
+          position: "MC",
         },
         {
           name: "GRJ_DINHO",
-          number: 7,
-          position: "MEI",
+          number: 10,
+          position: "MCD",
         },
         {
           name: "zFAROEST",
@@ -57,7 +57,7 @@ export default {
         {
           name: "Velloszo",
           number: 5,
-          position: "VOL",
+          position: "MCE",
         },
         {
           name: "m4nch4z4ni1510",
@@ -65,13 +65,8 @@ export default {
           position: "ALA",
         },
         {
-          name: "ErickExcellence9",
-          number: 12,
-          position: "ALA",
-        },
-        {
-          name: "Cicatriz2k",
-          number: 2,
+          name: "yThiagoXz__",
+          number: 14,
           position: "ALA",
         },
         {
@@ -80,18 +75,18 @@ export default {
           position: "ZAG",
         },
         {
+          name: "LFxzBaby-",
+          number: 33,
+          position: "ZAG",
+        },
+        {
           name: "MiguelArao",
           number: 23,
           position: "ZAG",
         },
         {
-          name: "GRJ_VIZZY",
-          number: 4,
-          position: "ZAG",
-        },
-        {
-          name: "GG_ARAUJO",
-          number: 3,
+          name: "GeteanDelavid",
+          number: 17,
           position: "ZAG",
         },
         {
@@ -241,14 +236,12 @@ export default {
         border: 3px solid #ffe294;
 
         box-sizing: border-box;
-
-        cursor: pointer;
       }
 
       em {
         position: absolute;
-        top: 4px;
-        right: 12px;
+        top: 12px;
+        right: 26px;
 
         font-family: "Roboto", sans-serif;
         font-size: 50px;
