@@ -18,7 +18,6 @@ import Players from "./components/Players.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
-  name: "App",
   components: {
     Navbar,
     Home,

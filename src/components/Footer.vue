@@ -8,9 +8,13 @@
 
       <li>
         <p>
-          © Copyright <em>2021</em> &nbsp; Grajaú E-SPORTS. TODOS OS DIREITOS RESERVADOS.
+          © Copyright <em>2022</em> &nbsp; Grajaú E-SPORTS. TODOS OS DIREITOS
+          RESERVADOS.
         </p>
-        <p>desenvolvido por <a href="https://edsoncamargo.dev">edsoncamargo.dev</a>.</p>
+        <p>
+          desenvolvido por
+          <a href="https://edsoncamargo.dev">edsoncamargo.dev</a>.
+        </p>
       </li>
     </ul>
 

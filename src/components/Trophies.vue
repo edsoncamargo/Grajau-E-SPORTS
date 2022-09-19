@@ -38,11 +38,13 @@
       <p>VICES-CAMPEONATOS</p>
 
       <ul>
-        <li>LICP A 1x</li>
-        <li>LICP C 1x</li>
-        <li>LDD A 1x</li>
-        <li>LDD B 1x</li>
-        <li>DIVISION 2 1x</li>
+        <li>CAMPINHO 1x 🥈</li>
+        <li>TITÃS A 1x 🥈</li>
+        <li>LICP A 1x 🥈</li>
+        <li>LICP C 2x 🥈</li>
+        <li>LDD A 1x 🥈</li>
+        <li>LDD B 1x 🥈</li>
+        <li>DIVISION 2 1x 🥈</li>
       </ul>
     </div>
   </section>
@@ -57,7 +59,12 @@ export default {
       trophies: [
         {
           type: "Brasileirão",
-          name: "LDD B",
+          name: "LICP B",
+          qtd: "1",
+        },
+        {
+          type: "Brasileirão",
+          name: "LB C",
           qtd: "1",
         },
         {
@@ -67,12 +74,17 @@ export default {
         },
         {
           type: "Brasileirão",
+          name: "LDD B",
+          qtd: "1",
+        },
+        {
+          type: "Brasileirão",
           name: "CPC A",
           qtd: "1",
         },
         {
           type: "Recopa",
-          name: "CPC A",
+          name: "RECOPA CPC",
           qtd: "1",
         },
       ],

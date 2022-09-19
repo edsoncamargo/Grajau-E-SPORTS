@@ -35,24 +35,24 @@ export default {
           position: "ATA",
         },
         {
-          name: "GRJ_REYNATO",
-          number: 7,
+          name: "zM4NOLAS",
+          number: 10,
           position: "ATA",
         },
         {
-          name: "Wraf4__",
-          number: 25,
-          position: "MC",
-        },
-        {
-          name: "GRJ_DINHO",
-          number: 10,
-          position: "MCD",
+          name: "GRJ_REYNATO",
+          number: 9,
+          position: "ATA",
         },
         {
           name: "zFAROEST",
           number: 8,
           position: "VOL",
+        },
+        {
+          name: "GRJ_DINHO",
+          number: 7,
+          position: "MCD",
         },
         {
           name: "Velloszo",
@@ -65,28 +65,13 @@ export default {
           position: "ALA",
         },
         {
-          name: "yThiagoXz__",
-          number: 14,
-          position: "ALA",
-        },
-        {
           name: "GRJ_RUBIM",
           number: 49,
           position: "ZAG",
         },
         {
-          name: "LFxzBaby-",
-          number: 33,
-          position: "ZAG",
-        },
-        {
           name: "MiguelArao",
           number: 23,
-          position: "ZAG",
-        },
-        {
-          name: "GeteanDelavid",
-          number: 17,
           position: "ZAG",
         },
         {
